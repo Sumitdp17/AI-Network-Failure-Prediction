@@ -1,0 +1,16 @@
+# Add project dependencies here
+pandas
+numpy
+matplotlib
+plotly
+scikit-learn
+xgboost
+lightgbm
+shap
+jupyter
+notebook
+fastapi
+uvicorn
+joblib
+mlflow
+pytest
