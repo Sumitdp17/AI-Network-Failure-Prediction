@@ -37,3 +37,11 @@ MODEL_PATH = SAVED_MODELS_DIR / "random_forest.pkl"
 TARGET_COLUMN = "label"
 
 RANDOM_STATE = 42
+
+# ============================
+# Feature Engineering
+# ============================
+
+FEATURE_IMPORTANCE_THRESHOLD = 0.01
+
+SELECTED_FEATURES_PATH = SAVED_MODELS_DIR / "selected_features.pkl"

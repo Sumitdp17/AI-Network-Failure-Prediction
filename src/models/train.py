@@ -69,17 +69,23 @@ class ModelTrainer:
         print("Data preprocessing completed successfully.")
         
     
-    def train(self):
+    def train(self, X_train=None, y_train=None):
         """
         Train the Random Forest model.
         """
 
+        if X_train is None:
+            X_train = self.X_train
+
+        if y_train is None:
+            y_train = self.y_train
+
         self.model.fit(
-            self.X_train,
-            self.y_train
+            X_train,
+            y_train
         )
 
-        print("Random Forest training completed.") 
+        print("Random Forest training completed.")
     
     def save_model(self):
         """
